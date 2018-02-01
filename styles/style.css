@@ -1,0 +1,520 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+    line-height: 1em;
+}
+
+.home-container{
+    width: 100vw;
+}
+
+/* ------------ Site Header Section ------------ */
+
+.welcome-section{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../assets/luca-bravo-217276.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome-container{
+    width: 500px;
+    height: 185px;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    vertical-align: middle;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background-color: rgba(32, 32, 32, .55);
+    /*display: none;*/
+}
+
+.site-welcome{
+    margin: 0 auto;
+    display: inline;
+    font-family: 'Oswald', sans-serif;
+    padding-top: -5px;
+    font-size: 130px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    /*text-shadow: 4px 4px gray;*/
+}
+
+.site-welcome-span{
+    font-size: 110px;
+    position: relative;
+    top: -20px;
+    padding-right: 40px;
+    /*border-right: .05em solid;*/
+    border-bottom: .05em solid;
+    animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret{
+    50%{
+        border-color: transparent;
+    }
+}
+
+.site-subtext{
+    display: none;
+    font-size: 22px;
+    margin-top: 5px;
+    margin-left: -30px;
+    color: #79ECFF;    
+    font-family: 'Oswald', sans-serif;
+}
+
+.resume-link{
+    color: #BCDC9D;
+    transition: text-shadow .2s;
+}
+
+.resume-link:hover{
+    text-shadow: 0 0 3px #BCDC9D;
+}
+
+/* ------------ Nav Section ------------ */
+
+.main-nav{
+    position: sticky;
+    float: right;
+    top: .5vh;
+    width: 625px;
+    height: 45px;
+    background-color: rgba(32, 32, 32, .5);
+    box-shadow: 0px 0px 5px rgba(32, 32, 32, .5);
+    vertical-align: middle;
+}
+
+.main-nav-item{ 
+    width: 120px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    color: #79ECFF;         
+}
+
+.main-nav-item a{
+    text-decoration: none;
+    color: #79ECFF;
+    cursor: pointer;
+    transition: letter-spacing .2s;   
+}
+
+.main-nav-item a:hover{
+    color: white;
+    letter-spacing: 2px;   
+}
+
+.main-nav-item:first-child{
+    margin-right: -10px;
+    padding-left: 10px;
+}
+
+.main-nav-item:last-child{
+    margin-left: 10px;
+}
+
+.prepended{
+    font-size: 25px;
+}
+
+.appended{
+    font-size: 25px;
+}
+
+
+/* ------------ About Me Section ------------ */
+
+.intro-section{
+    height: 500px;
+    width: 100%;
+    background-image: url(../assets/vertical-waves.png);
+}
+
+.motto{
+    padding-top: 50px;
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+.motto h2{
+    margin: 0;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.bio{
+    width: 500px;
+    height: 200px;
+    margin: 30px auto 0 auto;
+}
+
+.profile-pic{
+    width: 200px;
+    height: 200px;
+    background-image: url(../assets/profile_pic.jpg);
+    background-size: 100%;
+    border-radius: 50%;
+    float: left;
+}
+
+.bio-name{
+    width: 200px;
+    height: 25px;
+    margin-top: 45px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    float: left;
+    font-family: 'Oswald', sans-serif;
+}
+
+.name {
+    margin: 0;
+    font-size: 25px;
+}
+
+.bio-description{
+    width: 250px;
+    height: 50px;
+    margin-left: 25px;
+    float: left;
+    font-family: 'Oswald', sans-serif;
+}
+
+.description{
+    margin: 0;
+}
+
+.bio-paragraph{
+    margin-top: 10px;
+    width: 500px;
+    height: 200px;
+    float: left;
+}
+
+.paragraph{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* ------------ Project Section ------------ */
+
+.project-section{
+    background-image: url(../assets/dark_embroidery.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 950px;
+}
+
+.project-header{
+    width: 500px;
+    height: 195px;
+    margin: 0 auto;
+    position: relative;
+    top: -15px;
+}
+
+.project-title{
+    width: 350px;
+    height: 195px;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    font-size: 110px;
+    color: white; 
+    letter-spacing: 2px;
+}
+
+.project-subtext{
+    width: 475px;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-bottom: 0;
+    font-size: 21px;
+    font-family: 'Oswald', sans-serif;
+    color: #79ECFF;    
+}
+
+.project-body{
+    width: 80%;
+    height: 500px;
+    margin: 60px auto 0 auto;
+}
+
+.project-item{
+    width: 400px;
+    height: 470px;
+    float: left;
+    border-bottom: 40px solid gray;
+}
+
+.project-item:not(:last-child)
+{
+    margin-right: 160px;
+}
+
+.project-thumbnail{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #79ECFF;
+}
+
+.project-description{
+    width: 370px;
+    height: 125px;
+    margin: -30px auto 0 auto;
+    background-color: white;
+}
+
+.project-item-title{
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+.project-description-body{
+    width: 340px;
+    margin: 0 auto;
+}
+
+.project-description-subtext{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+}
+
+.more-projects{
+    width: 600px;
+    margin: 60px auto 0 auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;        
+}
+
+.more-projects a{
+    text-decoration:none;
+    color: #79ECFF;
+    transition: font-size .2s;
+    -webkit-transition: font-size .2s;
+    -moz-transition: font-size .2s;
+    -o-transition: font-size .2s;
+}
+
+.more-projects a:hover{
+    color: white;
+    font-size: 60px;
+}
+
+/* ------------ Contact Me Section ------------ */
+
+.Contact-Me-Section{
+    width: 100%;
+    height: 780px;
+    background-image: url(../assets/hypnotize.png);
+}
+
+.contact-me-header{
+    width: 800px;
+    height: 190px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-me-title{
+    margin: 0;
+    padding-top: 65px;
+    font-size: 30px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.contact-form{
+    width: 600px;
+    height: 600px;
+    margin: 20px auto 0 auto;
+}
+
+.firstname-form-container{
+    width: 280px;
+    height: 60px;
+    margin-right: 40px;
+    margin-top: 25px;
+    float: left;
+}
+
+.lastname-form-container{
+    width: 280px;
+    height: 60px;
+    margin-top: 25px;
+    float: left;
+}
+
+.form-label-name{
+    margin: 0;
+    font-family: 'Oswald', 'sans-serif';
+    letter-spacing: 2px;
+}
+
+#first-name-input{
+    width: 280px;
+    height: 30px;
+    background-color: #FAFAFA;
+    border: 1px solid #CCCCCC;
+}
+
+#last-name-input{
+    width: 280px;
+    height: 30px;
+    background-color: #FAFAFA;
+    border: 1px solid #CCCCCC;
+}
+
+.form-label{
+    margin: 0;
+    font-family: 'Oswald', 'sans-serif';
+    letter-spacing: 2px;
+}
+
+.email-form-container{
+    width: 600px;
+    height: 60px;
+    margin-top: 25px;
+    float: left;
+}
+
+#email-input{
+    width: 600px;
+    height: 30px;
+    background-color: #FAFAFA;
+    border: 1px solid #CCCCCC;
+}
+
+.subject-form-container{
+    width: 600px;
+    height: 60px;
+    margin-top: 25px;
+    float: left;
+}
+
+#subject-input{
+    width: 600px;
+    height: 30px;
+    background-color: #FAFAFA;
+    border: 1px solid #CCCCCC;
+}
+
+.message-form-container{
+    width: 600px;
+    height: 200px;
+    margin-top: 25px;
+    float: left;
+}
+
+#message-textarea{
+    width: 600px;
+    height: 150px;
+    background-color: #FAFAFA;
+    border: 1px solid #CCCCCC;
+}
+
+#submit-button{
+    width: 150px;
+    height: 40px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    font-family: "Oswald", "sans-serif";
+    font-size: 18px;
+    transition: background-color .2s;
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    -o-transition: background-color .2s;
+    cursor: pointer;
+}
+
+#submit-button:hover{
+    background-color: #272727;
+    color: white;
+}
+
+/* ------------ Footer --------------- */
+
+.footer-section{
+    background-image: url(../assets/dark-triangles.png);
+}
+
+.footer{
+    width: 400px;
+    height: 60px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer p{
+    margin: 0 0 5px 0;
+    color: white;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+/* ----------- Style Changes if Width < 1900px --------------- */
+
+@media only screen and (min-width: 1671px) and (max-width: 1899px)
+{
+    .project-section{
+        /*height: 1450px;*/
+    }
+
+    .project-body{
+        margin: 60px auto 0 auto;
+    }
+
+    .project-item:not(:last-child){
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 1674px)
+{
+    .project-section{
+        height: 1450px;
+    }
+
+    .project-body{
+        width: 90%;
+    }
+
+    .project-item:first-child{
+        margin-left: 10vw;
+        margin-right: 0;
+    }
+
+    .project-item:nth-child(2){
+        float: right;
+        margin-right: 10vw;
+    }
+
+    .project-item:last-child
+    {
+        float: left;
+        margin-left: 30vw;
+        margin-top: 20px;
+    }
+}   
+
